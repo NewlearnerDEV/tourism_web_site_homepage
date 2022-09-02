@@ -1,0 +1,47 @@
+#include<stdio.h>//insertion sort
+int sorting(int ar[],int a);
+int main()
+
+{
+     int i ,arr[15],n,key;
+    printf("enter no of elements");
+    scanf("%d",&n);
+    printf("enter the array");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("before sorting array is \n");
+     for(i=0;i<n;i++)
+    {   
+        
+        printf("%d",arr[i]);
+        printf("\t");
+    }
+    sorting(arr,n);
+    printf("after sorting array is \n");
+     for(i=0;i<n;i++)
+    {   
+        
+        printf("%d",arr[i]);
+        printf("\t");
+    }
+    return 0;
+}
+int sorting(int ar[],int a)
+{
+    int i,j,v;
+    for(i=1;i<=a-1;i++)
+    {
+        v=ar[i];
+        j=i;
+        while((ar[j-1]>v)&&j>0)
+        {
+            ar[j]=ar[j-1];
+            j--;
+        }
+        ar[j]=v;
+    }
+
+
+}
