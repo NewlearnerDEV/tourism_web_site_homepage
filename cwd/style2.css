@@ -1,0 +1,64 @@
+ img{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.contactcont{
+   
+    position:absolute;
+    margin-top: 1000px;
+    margin-left: 20px;
+    
+}
+.logo{
+    width:100px;
+     cursor:pointer;
+     border-radius: 50px;
+     height:100px;
+     margin-top: 20px;
+     margin-left:1px;
+    
+     position: absolute;
+     
+ }
+ .navbar{
+    width:85%;
+    margin-top:300px;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:absolute;
+}
+.navbar ul li{font-size:20px;
+    list-style:none;
+    display:inline-block;
+    margin:30px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover:after{
+    width:100%;
+}
+#form{
+    
+}
+.cssf{
+   
+   
+}
